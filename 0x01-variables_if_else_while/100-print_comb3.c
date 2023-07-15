@@ -12,11 +12,11 @@ int main(void)
 
 	for (high = 0; high < 9; high++)
 	{
-		for (low = 0; low <= 9; low++)
+		for (low = high + 1; low <= 9; low++)
 		{
 			putchar(high + '0');
 			putchar(low + '0');
-		
+
 			if (low == 9 && high == 8)
 				continue;
 
