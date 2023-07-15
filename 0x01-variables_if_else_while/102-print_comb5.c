@@ -11,7 +11,7 @@ int main(void)
 
 	for (moja = 0; moja <= 98; moja++)
 	{
-		for (mbili = 1; mbili <= 99; mbili++)
+		for (mbili = moja + 1; mbili <= 99; mbili++)
 		{
 			putchar((moja / 10) + '0');
 			putchar((moja % 10) + '0');
