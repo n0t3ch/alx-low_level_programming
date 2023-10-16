@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _power_recursion - find the power of x to y
+ * _pow_recursion - find the power of x to y
  * @x: the base number
  * @y: the power
  * Return: x to the power y
  */
-int _power_recursion(int x, int y)
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 		return (-1);
