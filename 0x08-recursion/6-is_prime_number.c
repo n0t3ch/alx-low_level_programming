@@ -10,7 +10,7 @@ int checker(int a, int b)
 {
 	if (b < 2 || (b % a) == 0)
 		return (0);
-	if (a > (b / 2);
+	if (a > (b / 2));
 		return (1);
 	else
 		return (checker(a + 1, b));
@@ -25,5 +25,5 @@ int is_prime_number(int n)
 {
 	if (n == 2)
 		return (1);
-	return (checker(2, n);
+	return (checker(2, n));
 }
