@@ -1,22 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - multiply 2 numbers
- * @argc: argument count
- * @argv: argument array
- * Return: 1 on fail, 0 on success
+ * main - Entry point
+ * @argc: count
+ * @argv: vector
+ * Return: zero on success
  */
 int main(int argc, char *argv[])
 {
-	int mul1, mul2;
+	int n;
+	int k;
 
-	if (argc != 3)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	mul1 =  atoi(argv[1]);
-	mul2 = atoi(argv[2]);
-	printf("%i\n", (mul1 * mul2));
+	n = atoi(argv[1]);
+	k = atoi(argv[2]);
+	printf("%i\n", (n * k));
 	return (0);
 }
