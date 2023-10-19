@@ -1,9 +1,10 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 char *_strdup(char *str)
 {
-	int len, n;
+	int len;
 	char *cp;
 
 	len = 0;
@@ -15,7 +16,6 @@ char *_strdup(char *str)
 	cp = malloc(sizeof(char) * (len + 1));
 	if (cp == NULL)
 		return (NULL);
-	for (n = 0; n < len; n++)	
-		cp[n] = str[n];
+	strcpy(cp, str);
 	return (cp);
 }
