@@ -22,4 +22,5 @@ int main(int argc, char *argv[])
 		printf("%i\n", mul1 * mul2);
 		return (0);
 	}
+	return (0);
 }
