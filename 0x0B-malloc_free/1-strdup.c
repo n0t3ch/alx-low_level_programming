@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 char *_strdup(char *str)
@@ -12,7 +12,7 @@ char *_strdup(char *str)
 		str++;
 		len++;
 	}
-	cp = malloc(sizeof(char * (len + 1));
+	cp = malloc(sizeof((char * (len + 1)));
 	if (cp == NULL)
 		return (NULL);
 	for (n = 0; n < len; n++)
