@@ -4,7 +4,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
-	int n;
+	unsigned int n;
 
 	if (size == 0)
 		return (NULL);
