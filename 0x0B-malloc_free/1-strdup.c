@@ -3,7 +3,7 @@
 
 char *_strdup(char *str)
 {
-	unsigned int len, n;
+	int len, n;
 	char *cp;
 
 	len = 0;
@@ -12,7 +12,7 @@ char *_strdup(char *str)
 		str++;
 		len++;
 	}
-	cp = malloc(sizeof((char) * (len + 1));
+	cp = malloc(sizeof(char) * (len + 1));
 	if (cp == NULL)
 		return (NULL);
 	for (n = 0; n < len; n++)	
