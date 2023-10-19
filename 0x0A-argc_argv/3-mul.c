@@ -15,12 +15,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else if (argc == 3)
-	{
-		mul1 =  atoi(argv[1]);
-		mul2 = atoi(argv[2]);
-		printf("%i\n", mul1 * mul2);
-		return (0);
-	}
+	mul1 =  atoi(argv[1]);
+	mul2 = atoi(argv[2]);
+	printf("%i\n", (mul1 * mul2));
 	return (0);
 }
