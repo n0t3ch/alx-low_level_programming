@@ -2,6 +2,12 @@
 #include <string.h>
 #include "main.h"
 
+/**
+ * _strdup - copy string to memory
+ * @str: string to copy
+ * Return: pointer to copy
+ */
+
 char *_strdup(char *str)
 {
 	int len;
