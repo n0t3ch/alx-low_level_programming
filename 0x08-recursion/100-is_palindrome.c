@@ -28,8 +28,7 @@ int checker(char *s, int a, int z)
 	}
 	else
 		return (checker(s, a + 1, z - 1));
-	else
-		return (0);
+	return (0);
 }
 
 /**
