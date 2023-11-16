@@ -25,10 +25,11 @@ int checker(char *s, int a, int z)
 	{
 		if (a > (z / 2))
 			return (1);
+		else
+			return (checker(s, a + 1, z - 1));
 	}
 	else
-		return (checker(s, a + 1, z - 1));
-	return (0);
+		return (0);
 }
 
 /**
