@@ -19,7 +19,7 @@ int length(char *s)
  * @z: last char in string
  * Return: 1 if palindrome else 0
  */
-int checker(char s, int a, int z)
+int checker(char *s, int a, int z)
 {
 	if (s[a] == s[z])
 	{
