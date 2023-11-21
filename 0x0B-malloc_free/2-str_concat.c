@@ -10,13 +10,13 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len1, len2;
+	int len1, len2, i;
 	char *new;
 
 	if (s1 == NULL)
-		len1 = 0;
+		s1 = "";
 	if (s2 == NULL)
-		len2 = 0;
+		*s2 = "";
 
 	len1 = strlen(s1);
 	len2 = strlen(s2);
@@ -37,6 +37,7 @@ char *str_concat(char *s1, char *s2)
 		new++;
 		s2++;
 	}
-	*new = '\0';
+	i = len1 + len2;
+	new[i] = '\0';
 	return (new);
 }
