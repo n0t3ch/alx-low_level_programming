@@ -9,9 +9,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *join;
+	char *join = dest;
 
-	*join = *dest;
 	while (*dest)
 	{
 		dest++;
