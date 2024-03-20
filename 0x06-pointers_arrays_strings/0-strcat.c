@@ -1,18 +1,28 @@
 #include "main.h"
 
+/**
+ * _strcat - concatenate
+ * @dest: destination
+ * @src: source
+ *
+ * Return: long string
+ */
 char *_strcat(char *dest, char *src)
 {
-	char *rdest;
+	char *join;
 
-	rdest = dest;
-	while (*dest != '\0')
+	*join = *dest;
+	while (*dest)
+	{
 		dest++;
-	while (*src != '\0')
+	}
+
+	while (*src)
 	{
 		*dest = *src;
 		dest++;
 		src++;
 	}
 	*dest = '\0';
-	return rdest;
+	return (join);
 }
